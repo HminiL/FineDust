@@ -1,0 +1,50 @@
+.fine_dust{
+    display: flex;
+    justify-content: calc(100%/ 3);
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 20vw;
+}
+
+.dust_box{
+    font-family: system-ui, serif;
+    font-size: 4vh;
+    color: white;
+    padding: 5vh;
+    border-radius: 3vh;
+    background: #704D96;
+    
+}
+
+.select_city{
+    height: 5vh;
+    color: white;
+    font-size: 2rem;
+}
+
+.parent{
+    width: 25vw;
+    text-align: center;
+    display: flex;
+}
+
+.first {
+    flex:1;
+    width:15%;
+    margin-left: 5vw;
+    box-sizing: border-box;
+}
+
+.second{
+    flex:1;
+    width:15%;
+    box-sizing: border-box;
+}
+
+.texts{
+    font-family: sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+    line-height: 60px;
+}
+

@@ -1,0 +1,31 @@
+version: '3'
+services:
+  ui:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: hmin10580/finedust_front:1.0.0
+    container_name: frontend_finedust
+    command: ["nginx", "-g", "daemon off;"]
+    restart: always
+    ports:
+      - "3000:80"
+    volumes:
+      - .:/ui
+    expose:
+      - "3000"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: hmin10580/finedust_back:1.0.1
+    container_name: backend_finedust
+    command: "python manage.py runserver 0.0.0.0:8000"
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/user
+    expose:
+      - "8000"
