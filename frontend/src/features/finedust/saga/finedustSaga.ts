@@ -9,7 +9,6 @@ function* fineDustSearch(action: PayloadAction<cityParamType>){
             finedustAPI.fineDustSearchAPI,
             action.payload
         );
-        console.log('사가 확인!!!')
         
         yield put(fineDustSuccess(result));
     }

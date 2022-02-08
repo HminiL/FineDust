@@ -7,7 +7,6 @@ const headers = {
 }
 
 function fineDustSearchAPI(data: cityParamType){
-    console.log(`api 확인!!!! ${`${SERVER}/city/${data.city}`}`)
     return axios.get(`${SERVER}/city/${data.city}`)
   }
 
