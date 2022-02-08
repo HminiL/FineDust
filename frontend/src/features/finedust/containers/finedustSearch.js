@@ -6,7 +6,6 @@ import { Result } from '..';
 
 const FineDustSearch = () =>{
 
-    const dustData = useSelector(state => state.fineDust.dustData)
     return (
         <div class='fine_dust' className={styles.fine_dust}>
         <h1 class='dust_box' className={styles.dust_box} >지금 
